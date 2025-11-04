@@ -1,12 +1,11 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace Persistence.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class CreateInitialHorseSnapshots : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,10 +14,11 @@ namespace Persistence.Migrations
                 name: "HorseSnapshots",
                 columns: table => new
                 {
-                    HorseSnapshotId = table.Column<int>(type: "INTEGER", nullable: true),
+                    HorseSnapshotId = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
                     HorseId = table.Column<int>(type: "INTEGER", nullable: false),
-                    Parent1HorseId = table.Column<int>(type: "INTEGER", nullable: true),
-                    Parent2HorseId = table.Column<int>(type: "INTEGER", nullable: true),
+                    Parent1HorseId = table.Column<int>(type: "INTEGER", nullable: false),
+                    Parent2HorseId = table.Column<int>(type: "INTEGER", nullable: false),
                     Rank = table.Column<string>(type: "TEXT", nullable: false),
                     Score = table.Column<int>(type: "INTEGER", nullable: false),
                     StarLevel = table.Column<int>(type: "INTEGER", nullable: false),
@@ -30,13 +30,13 @@ namespace Persistence.Migrations
                     Guts = table.Column<int>(type: "INTEGER", nullable: false),
                     Wit = table.Column<int>(type: "INTEGER", nullable: false),
                     IsGuest = table.Column<bool>(type: "INTEGER", nullable: false),
-                    GuestOwnerName = table.Column<string>(type: "TEXT", nullable: false),
-                    GuestParent1HorseId = table.Column<int>(type: "INTEGER", nullable: true),
-                    GuestParent2HorseId = table.Column<int>(type: "INTEGER", nullable: true),
+                    GuestOwnerName = table.Column<string>(type: "TEXT", nullable: true),
+                    GuestParent1HorseId = table.Column<int>(type: "INTEGER", nullable: false),
+                    GuestParent2HorseId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Activities", x => x.HorseSnapshotId);
+                    table.PrimaryKey("PK_HorseSnapshots", x => x.HorseSnapshotId);
                 });
         }
 

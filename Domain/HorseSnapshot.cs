@@ -1,9 +1,11 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Domain;
 
 public class HorseSnapshot
 {
+    [Key]
     public int HorseSnapshotId { get; set; }
     public required int HorseId { get; set; }
     public int Parent1HorseId { get; set; }

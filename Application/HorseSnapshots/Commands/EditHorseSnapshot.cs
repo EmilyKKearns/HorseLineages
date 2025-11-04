@@ -3,26 +3,24 @@ using Domain;
 using MediatR;
 using Persistence;
 
-namespace Application.Activities.Commands;
+namespace Application.HorseSnapshots.Commands;
 
-public class EditActivity
+public class EditHorseSnapshot
 {
     public class Command : IRequest
     {
-        public required Activity Activity { get; set; }
+        public required HorseSnapshot HorseSnapshot { get; set; }
     }
 
     public class Handler(AppDbContext context, IMapper mapper) : IRequestHandler<Command>
     {
         public async Task Handle(Command request, CancellationToken cancellationToken)
         {
-            var activity = await context.Activities
-                .FindAsync([request.Activity.Id], cancellationToken)
+            var horseSnapshot = await context.HorseSnapshots
+                .FindAsync([request.HorseSnapshot.HorseSnapshotId], cancellationToken)
                 ?? throw new Exception("Cannot find activity");
 
-            activity.Title = request.Activity.Title;
-
-            mapper.Map(request.Activity, activity);
+            mapper.Map(request.HorseSnapshot, horseSnapshot);
 
             await context.SaveChangesAsync(cancellationToken);
         }
