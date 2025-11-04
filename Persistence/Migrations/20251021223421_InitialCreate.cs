@@ -12,23 +12,31 @@ namespace Persistence.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Activities",
+                name: "HorseSnapshots",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "TEXT", nullable: false),
-                    Title = table.Column<string>(type: "TEXT", nullable: false),
-                    Date = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    Description = table.Column<string>(type: "TEXT", nullable: false),
-                    Category = table.Column<string>(type: "TEXT", nullable: false),
-                    IsCancelled = table.Column<bool>(type: "INTEGER", nullable: false),
-                    City = table.Column<string>(type: "TEXT", nullable: false),
-                    Venue = table.Column<string>(type: "TEXT", nullable: false),
-                    Latitude = table.Column<double>(type: "REAL", nullable: false),
-                    Longitude = table.Column<double>(type: "REAL", nullable: false)
+                    HorseSnapshotId = table.Column<int>(type: "INTEGER", nullable: true),
+                    HorseId = table.Column<int>(type: "INTEGER", nullable: false),
+                    Parent1HorseId = table.Column<int>(type: "INTEGER", nullable: true),
+                    Parent2HorseId = table.Column<int>(type: "INTEGER", nullable: true),
+                    Rank = table.Column<string>(type: "TEXT", nullable: false),
+                    Score = table.Column<int>(type: "INTEGER", nullable: false),
+                    StarLevel = table.Column<int>(type: "INTEGER", nullable: false),
+                    PotentialLevel = table.Column<int>(type: "INTEGER", nullable: false),
+                    UniqueSkillLevel = table.Column<int>(type: "INTEGER", nullable: false),
+                    Speed = table.Column<int>(type: "INTEGER", nullable: false),
+                    Stamina = table.Column<int>(type: "INTEGER", nullable: false),
+                    Power = table.Column<int>(type: "INTEGER", nullable: false),
+                    Guts = table.Column<int>(type: "INTEGER", nullable: false),
+                    Wit = table.Column<int>(type: "INTEGER", nullable: false),
+                    IsGuest = table.Column<bool>(type: "INTEGER", nullable: false),
+                    GuestOwnerName = table.Column<string>(type: "TEXT", nullable: false),
+                    GuestParent1HorseId = table.Column<int>(type: "INTEGER", nullable: true),
+                    GuestParent2HorseId = table.Column<int>(type: "INTEGER", nullable: true),
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Activities", x => x.Id);
+                    table.PrimaryKey("PK_Activities", x => x.HorseSnapshotId);
                 });
         }
 
@@ -36,7 +44,7 @@ namespace Persistence.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Activities");
+                name: "HorseSnapshots");
         }
     }
 }

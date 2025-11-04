@@ -20,46 +20,77 @@ namespace Persistence.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.3");
 
-            modelBuilder.Entity("Domain.Activity", b =>
+            modelBuilder.Entity("Domain.HorseSnapshot", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Category")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("City")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<bool>("IsCancelled")
+                    b.Property<int>("HorseSnapshotId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<double>("Latitude")
-                        .HasColumnType("REAL");
+                    b.Property<int>("HorseId")
+                        .IsRequired()
+                        .HasColumnType("INTEGER");
 
-                    b.Property<double>("Longitude")
-                        .HasColumnType("REAL");
+                    b.Property<int>("Parent1HorseId")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("Title")
+                    b.Property<int>("Parent2HorseId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Rank")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Venue")
+                    b.Property<int>("Score")
                         .IsRequired()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("StarLevel")
+                        .IsRequired()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("PotentialLevel")
+                        .IsRequired()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("UniqueSkillLevel")
+                        .IsRequired()
+                        .HasColumnType("INTEGER");
+                    
+                    b.Property<int>("Speed")
+                        .IsRequired()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Stamina")
+                        .IsRequired()
+                        .HasColumnType("INTEGER");
+                    
+                    b.Property<int>("Power")
+                        .IsRequired()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Guts")
+                        .IsRequired()
+                        .HasColumnType("INTEGER");
+                    
+                    b.Property<int>("Wit")
+                        .IsRequired()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IsGuest")
+                        .IsRequired()
+                        .HasColumnType("INTEGER"); //Bit for SQL or Integer for Sqlite
+
+                    b.Property<string>("GuestOwnerName")
                         .HasColumnType("TEXT");
 
-                    b.HasKey("Id");
+                    b.Property<int>("GuestParent1HorseId")
+                        .HasColumnType("INTEGER");
+                    
+                    b.Property<int>("GuestParent2HorseId")
+                        .HasColumnType("INTEGER");
+                    
+                    b.HasKey("HorseSnapshotId");
 
-                    b.ToTable("Activities");
+                    b.ToTable("HorseSnapshots");
                 });
 #pragma warning restore 612, 618
         }
