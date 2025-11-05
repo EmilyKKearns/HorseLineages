@@ -10,6 +10,8 @@ public class HorseSnapshot
     public required int HorseId { get; set; }
     public int Parent1HorseId { get; set; }
     public int Parent2HorseId { get; set; }
+    // TODO: Revise to be a many-to-many relationship 
+    public required List<Race> RacesWon { get; set; }
     public required string Rank { get; set; }
     public required int Score { get; set; }
     public required int StarLevel { get; set; }
