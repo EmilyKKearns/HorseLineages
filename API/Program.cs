@@ -31,7 +31,11 @@ var services = scope.ServiceProvider;
 try
 {
     var context = services.GetRequiredService<AppDbContext>();
+
+    // Not for production - drops and recreates the database on each run
+    await context.Database.EnsureDeletedAsync();
     await context.Database.MigrateAsync();
+
     await DbInitializer.SeedData(context);
 }
 catch (Exception ex)

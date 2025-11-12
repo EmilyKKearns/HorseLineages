@@ -10,7 +10,6 @@ public class HorseSnapshot
     public required int HorseId { get; set; }
     public int Parent1HorseId { get; set; }
     public int Parent2HorseId { get; set; }
-    // TODO: Revise to be a many-to-many relationship 
     public required List<Race> RacesWon { get; set; }
     public required string Rank { get; set; }
     public required int Score { get; set; }
@@ -26,4 +25,14 @@ public class HorseSnapshot
     public string? GuestOwnerName { get; set; }
     public int GuestParent1HorseId { get; set; }
     public int GuestParent2HorseId { get; set; }
+    public required string TurfAptitude { get; set; }
+    public required string DirtAptitude { get; set; }
+    public required string SprintAptitude { get; set; }
+    public required string MileAptitude { get; set; }
+    public required string MediumAptitude { get; set; }
+    public required string LongAptitude { get; set; }
+    public required string FrontRunnerAptitude { get; set; }
+    public required string PaceChaserAptitude { get; set; }
+    public required string LateSurgerAptitude { get; set; }
+    public required string EndCloserAptitude { get; set; }
 }
