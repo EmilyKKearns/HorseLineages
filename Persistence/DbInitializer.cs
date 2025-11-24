@@ -17,7 +17,6 @@ public static class DbInitializer
             var races = new List<Race>
             {
                 new() {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Hanshin Juvenile Fillies",
                     Grade = "G1",
                     Year = 1,
@@ -30,7 +29,6 @@ public static class DbInitializer
                     LengthInMeters = 1600
                 },
                 new() {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Asahi Hai Futurity Stakes",
                     Grade = "G1",
                     Year = 1,
@@ -43,7 +41,6 @@ public static class DbInitializer
                     LengthInMeters = 1600
                 },
                 new() {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Hopeful Stakes",
                     Grade = "G1",
                     Year = 1,
@@ -56,7 +53,6 @@ public static class DbInitializer
                     LengthInMeters = 2000
                 },
                 new() {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Oka Sho",
                     Grade = "G1",
                     Year = 2,
@@ -69,7 +65,6 @@ public static class DbInitializer
                     LengthInMeters = 1600
                 },
                 new() {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Satsuki Sho",
                     Grade = "G1",
                     Year = 2,
@@ -82,7 +77,6 @@ public static class DbInitializer
                     LengthInMeters = 2000
                 },
                 new() {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Japanese Oaks",
                     Grade = "G1",
                     Year = 2,
@@ -95,7 +89,6 @@ public static class DbInitializer
                     LengthInMeters = 2400
                 },
                 new() {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Tokyo Yushun (Japanese Derby)",
                     Grade = "G1",
                     Year = 2,
@@ -108,7 +101,6 @@ public static class DbInitializer
                     LengthInMeters = 2400
                 },
                 new() {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Yasuda Kinen",
                     Grade = "G1",
                     Year = 2,
@@ -122,7 +114,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Takarazuka Kinen",
                     Grade = "G1",
                     Year = 2,
@@ -136,7 +127,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Japan Dirt Derby",
                     Grade = "G1",
                     Year = 2,
@@ -150,7 +140,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Sprinters Stakes",
                     Grade = "G1",
                     Year = 2,
@@ -164,7 +153,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Kobe Shimbun Hai",
                     Grade = "G2",
                     Year = 2,
@@ -178,7 +166,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Shuka Sho",
                     Grade = "G1",
                     Year = 2,
@@ -192,7 +179,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Kikuka Sho",
                     Grade = "G1",
                     Year = 2,
@@ -206,7 +192,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Tenno Sho (Autumn)",
                     Grade = "G1",
                     Year = 2,
@@ -220,7 +205,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Queen Elizabeth II Cup",
                     Grade = "G1",
                     Year = 2,
@@ -234,7 +218,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "JBC Classic",
                     Grade = "G1",
                     Year = 2,
@@ -248,7 +231,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "JBC Ladies' Classic",
                     Grade = "G1",
                     Year = 2,
@@ -262,7 +244,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "JBC Sprint",
                     Grade = "G1",
                     Year = 2,
@@ -276,7 +257,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Japan Cup",
                     Grade = "G1",
                     Year = 2,
@@ -290,7 +270,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Mile Championship",
                     Grade = "G1",
                     Year = 2,
@@ -304,7 +283,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Champions Cup",
                     Grade = "G1",
                     Year = 2,
@@ -318,7 +296,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Arima Kinen",
                     Grade = "G1",
                     Year = 2,
@@ -332,7 +309,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Tokyo Daishoten",
                     Grade = "G1",
                     Year = 2,
@@ -346,7 +322,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "February Stakes",
                     Grade = "G1",
                     Year = 3,
@@ -360,7 +335,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Osaka Hai",
                     Grade = "G1",
                     Year = 3,
@@ -374,7 +348,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Takamatsunomiya Kinen",
                     Grade = "G1",
                     Year = 3,
@@ -388,7 +361,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Tenno Sho (Spring)",
                     Grade = "G1",
                     Year = 3,
@@ -402,7 +374,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Victoria Mile",
                     Grade = "G1",
                     Year = 3,
@@ -416,7 +387,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Yasuda Kinen",
                     Grade = "G1",
                     Year = 3,
@@ -430,7 +400,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Takarazuka Kinen",
                     Grade = "G1",
                     Year = 3,
@@ -444,7 +413,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Teio Sho",
                     Grade = "G1",
                     Year = 3,
@@ -458,7 +426,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Sprinters Stakes",
                     Grade = "G1",
                     Year = 3,
@@ -472,7 +439,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Tenno Sho (Autumn)",
                     Grade = "G1",
                     Year = 3,
@@ -486,7 +452,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Queen Elizabeth II Cup",
                     Grade = "G1",
                     Year = 3,
@@ -500,7 +465,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "JBC Classic",
                     Grade = "G1",
                     Year = 3,
@@ -514,7 +478,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "JBC Ladies' Classic",
                     Grade = "G1",
                     Year = 3,
@@ -528,7 +491,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "JBC Sprint",
                     Grade = "G1",
                     Year = 3,
@@ -542,7 +504,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Japan Cup",
                     Grade = "G1",
                     Year = 3,
@@ -556,7 +517,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Mile Championship",
                     Grade = "G1",
                     Year = 3,
@@ -570,7 +530,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Champions Cup",
                     Grade = "G1",
                     Year = 3,
@@ -584,7 +543,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Arima Kinen",
                     Grade = "G1",
                     Year = 3,
@@ -598,7 +556,6 @@ public static class DbInitializer
                 },
                 new()
                 {
-                    HorsesRequiredFor = new List<Horse>(),
                     Name = "Tokyo Daishoten",
                     Grade = "G1",
                     Year = 3,
@@ -629,7 +586,6 @@ public static class DbInitializer
                     var h = horses[idx];
                     h.CareerRaces.Add(race);
                     horseTurns[idx].Add(race.Turn);
-                    race.HorsesRequiredFor = new List<Horse> { h };
                 }
                 else
                 {
@@ -653,7 +609,6 @@ public static class DbInitializer
 
                     horses.Add(h);
                     horseTurns.Add(new HashSet<string> { race.Turn });
-                    race.HorsesRequiredFor = new List<Horse> { h };
                 }
             }
 

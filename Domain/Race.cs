@@ -7,7 +7,6 @@ public class Race
 {
     [Key]
     public int RaceId { get; set; }
-    public required List<Horse> HorsesRequiredFor { get; set; }
     public required string Name { get; set; }
     public required string Grade { get; set; }
     public required int Year { get; set; }

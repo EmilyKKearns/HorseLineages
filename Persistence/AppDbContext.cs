@@ -16,11 +16,11 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
     {
         modelBuilder.Entity<Horse>()
             .HasMany(h => h.CareerRaces)
-            .WithMany(cr => cr.HorsesRequiredFor)
-            .UsingEntity(j => j.ToTable("HorseCareerRaces"));
+            .WithMany();
 
         modelBuilder.Entity<HorseSnapshot>()
-            .HasMany(hs => hs.RacesWon);
+            .HasMany(hs => hs.RacesWon)
+            .WithMany();
     }
 
 }
